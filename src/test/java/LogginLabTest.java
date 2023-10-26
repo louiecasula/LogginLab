@@ -43,7 +43,7 @@ public class LogginLabTest {
             if (lab.thresholdReached(i)) {
                 logger.log(Level.INFO, "Threshold finally exceeded!");
                 assertTrue(lab.thresholdReached(i));
-            } else if (i == limit) {
+            } else if (i.equals(limit)) {
                 logger.log(Level.INFO, "Threshold met.");
             } else {
                 logger.log(Level.INFO, "Threshold not reached! Only "+ (limit - i) +" to go!");
